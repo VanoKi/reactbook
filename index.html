@@ -11,6 +11,11 @@
 </head>
 <body>
 <div id="root"></div>
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="">
+  const reactElement = React.createElement('h1', null, 'Hello World!');
+  const domNode = document.getElementByID('root');
+  const root = ReactDOM.createRoot(domNode);
+  root.render(reactElement)
+</script>
 </body>
 </html>
